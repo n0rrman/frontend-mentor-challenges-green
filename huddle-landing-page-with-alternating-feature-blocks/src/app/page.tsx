@@ -1,16 +1,24 @@
 export default function Home() {
   return (
-    <div>
-      <div>Try It Free</div>
+    <div className="flex flex-col">
+      <header className="flex flex-row justify-between">
+        <div>HUDDLE LOGO</div>
+        <button>Try It Free</button>
+      </header>
+      <section className="flex flex-row">
+        <div className="flex flex-col w-1/2">
+          <h1>Build The Community Your Fans Will Love</h1>
+          <div>
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </div>
 
-      <div>Build The Community Your Fans Will Love</div>
-      <div>
-        Huddle re-imagines the way we build communities. You have a voice, but
-        so does your audience. Create connections with your users as you engage
-        in genuine discussion.
-      </div>
+          <div>Get Started For Free</div>
+        </div>
+        <div className="w-1/2">IMAGE</div>
+      </section>
 
-      <div>Get Started For Free</div>
       <div>Grow Together</div>
       <div>
         Generate meaningful discussions with your audience and build a strong,
