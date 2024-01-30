@@ -6,7 +6,18 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        lightCyan: 'hsl(var(--color-lightCyan) / <alpha-value>)',
+        neonGreen: 'hsl(var(--color-neonGreen) / <alpha-value>)',
+        
+        grayishBlue: 'hsl(var(--color-grayishBlue) / <alpha-value>)',
+        darkGrayishBlue: 'hsl(var(--color-darkGrayishBlue) / <alpha-value>)',
+        darkBlue: 'hsl(var(--color-darkBlue) / <alpha-value>)',
+      },
+    },
+  },
   plugins: [],
 }
 export default config
