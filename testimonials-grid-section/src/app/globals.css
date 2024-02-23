@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-moderateViolet: 263deg 55% 52%;
+    --color-veryDarkGrayishBlue: 217deg 19% 35%;
+    --color-veryDarkBlackishBlue: 219deg 29% 14%;
+    --color-white: 0deg 0% 100%;
+
+    --color-lightGray: 0deg 0% 81%;
+    --color-lightGrayishBlue: 210deg 46% 95%;
+  }
+}
