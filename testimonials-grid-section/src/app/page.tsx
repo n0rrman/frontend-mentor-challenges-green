@@ -8,7 +8,7 @@ import patrickPic from "/public/image-patrick.jpg";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center min-h-screen bg-lightGrayishBlue font-medium text-white">
+    <main className="flex justify-center items-center min-h-screen bg-lightGrayishBlue font-medium text-lightGray">
       <section className="flex flex-col mx-6 sm:grid grid-cols-2 lg:grid-cols-4 gap-x-[1.875rem] gap-y-6 container lg:max-w-[69.375rem]">
         <Card
           className="col-span-2 bg-moderateViolet"
