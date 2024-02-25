@@ -11,8 +11,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Solution at Frontend Mentor](...)
-- Live Site URL: [Live version on Vercel](...)
+- Solution URL: [Solution at Frontend Mentor](https://www.frontendmentor.io/solutions/testimonials-grid-section-tailwindcss-and-nextjs-pyf7uz8oML)
+- Live Site URL: [Live version on Vercel](https://testimonials-grid-section-brown-eight.vercel.app)
 
 
 ### Built with

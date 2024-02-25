@@ -11,6 +11,7 @@ interface CardProps {
   purpleBorder?: boolean;
   first?: boolean;
   className: string;
+  headingColour?: string;
 }
 
 export default function Card({
@@ -22,6 +23,7 @@ export default function Card({
   purpleBorder,
   first,
   className,
+  headingColour,
 }: CardProps) {
   return (
     <div
@@ -41,14 +43,16 @@ export default function Card({
           <Image alt="" src={profilePic} fill />
         </div>
         <div className="flex flex-col z-30">
-          <h2 className="text-[0.8rem] -mb-0.5">{name}</h2>
+          <h2 className={`${headingColour} text-[0.8rem] -mb-0.5`}>{name}</h2>
           <h3 className="text-[0.675rem] opacity-50 font-bold">{title}</h3>
         </div>
       </div>
-      <h1 className="font-semibold text-[1.25rem] leading-6 z-30 tracking-[0.0025rem] pb-2.5">
+      <h1
+        className={`${headingColour} font-semibold text-[1.25rem] leading-6 z-30 tracking-[0.0025rem] pb-2.5`}
+      >
         {heading}
       </h1>
-      <p className="opacity-70 leading-[1.15rem] z-30">" {text} "</p>
+      <p className="opacity-70 leading-[1.15rem] z-30">&quot; {text} &quot;</p>
     </div>
   );
 }

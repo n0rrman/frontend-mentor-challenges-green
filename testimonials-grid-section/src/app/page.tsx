@@ -16,6 +16,7 @@ export default function Home() {
           title="Verified Graduate"
           profilePic={danielPic}
           first
+          headingColour="text-white"
           heading="I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny's worth."
           text="I was an EMT for many years before I joined the bootcamp. I've been
         looking to make a transition and have heard some people who had an
@@ -31,6 +32,7 @@ export default function Home() {
           name="Jonathan Walters"
           title="Verified Graduate"
           profilePic={jonathanPic}
+          headingColour="text-white"
           heading="The team was very supportive and kept me motivated"
           text="I started as a total newbie with virtually no coding skills. I now
         work as a mobile engineer for a big company. This was one of the best
@@ -53,6 +55,7 @@ export default function Home() {
           title="Verified Graduate"
           profilePic={patrickPic}
           purpleBorder
+          headingColour="text-white"
           heading="Awesome teaching support from TAs who did the bootcamp themselves.
         Getting guidance from them and learning from their experiences was easy."
           text="The staff seem genuinely concerned about my progress which I find

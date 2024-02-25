@@ -12,7 +12,7 @@ The challenges are solved using [Next.js](https://nextjs.org/), [Tailwind CSS](h
 
 | Challenge | Level | Repository | Live version | Screenshot |
 |-----------|-------|------------|--------------|------------|
-| [-](...)  | 🟢Junior | [...](https://github.com/n0rrman/frontend-mentor-challenges-green/tree/main/...) | [Vercel](https://....vercel.app) | ![Screenshot of the solved challenge](.../design/screenshot.png) |
+| [Testimonials grid section](https://www.frontendmentor.io/solutions/testimonials-grid-section-tailwindcss-and-nextjs-pyf7uz8oML)  | 🟢Junior | [testimonials-grid-section](https://github.com/n0rrman/frontend-mentor-challenges-green/tree/main/testimonials-grid-section) | [Vercel](https://testimonials-grid-section-brown-eight.vercel.app) | ![Screenshot of the solved challenge](testimonials-grid-section/design/screenshot.png) |
 
 
 <!--
