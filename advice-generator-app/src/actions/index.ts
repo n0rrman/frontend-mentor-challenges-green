@@ -15,3 +15,4 @@ export async function getById(id: string) {
     const result = await response.json();
     return result;
 }
+
