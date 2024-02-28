@@ -11,23 +11,32 @@ interface TipBoxProps {
 }
 
 export default async function TipBox({ id }: TipBoxProps) {
-  const nextRandom = Math.floor(Math.random() * 225);
+  const nextRandom = 1 + Math.floor(Math.random() * 224);
 
   const tip = id ? await getById(id) : await getRandom();
 
-  return (
-    <main className="flex flex-col justify-between mb-8 items-center text-[1.75rem] mx-5 min-w-[33.75rem] min-h-[20.75rem] rounded-2xl shadow-xl bg-darkGrayishBlue text-white text-center">
-      <h1 className="uppercase text-xs pt-12 tracking-[0.3rem] text-neonGreen">
-        Advice #{tip.slip.id}
-      </h1>
-      <p className="text-[1.75rem] max-w-[24ch]">" {tip.slip.advice} "</p>
+  let advice;
+  if (!tip.slip) {
+    advice = tip.message.text;
+  } else {
+    advice = tip.slip.advice;
+  }
 
-      <div className="relative">
+  return (
+    <main className="flex flex-col justify-between mb-8 items-center text-[1.75rem] mx-5 min-w-full sm:min-w-[33.75rem] min-h-[20.75rem] rounded-none sm:rounded-2xl shadow-xl bg-darkGrayishBlue text-white text-center">
+      <h1 className="uppercase text-xs pt-12 tracking-[0.3rem] text-neonGreen">
+        Advice #{id}
+      </h1>
+      <p className="text-[1.75rem] text-lightCyan max-w-[24ch] leading-[2.5rem] p-5 sm:p-0">
+        " {advice} "
+      </p>
+
+      <div className="relative py-5">
         <Image alt="" width={444} height={16} src={dividerDesktop} />
       </div>
       <Link
         href={`${nextRandom}`}
-        className="relative flex justify-center items-center w-16 h-16 -mb-8 rounded-full bg-neonGreen text-black"
+        className="relative flex justify-center items-center w-16 h-16 -mb-8 rounded-full bg-neonGreen hover:shadow-[0px_0px_20px_2px] transition hover:shadow-neonGreen text-black"
       >
         <Image alt="" width={24} height={24} src={diceIcon} />
       </Link>
