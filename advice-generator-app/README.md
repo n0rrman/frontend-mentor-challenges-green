@@ -10,8 +10,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Solution at Frontend Mentor](...)
-- Live Site URL: [Live version on Vercel](...)
+- Solution URL: [Solution at Frontend Mentor](https://www.frontendmentor.io/solutions/advice-generator-app-tailwindcss-and-nextjs-xF8NQTU5DO)
+- Live Site URL: [Live version on Vercel](https://advice-generator-app-alpha-tan.vercel.app)
 
 
 ### Built with

@@ -28,7 +28,7 @@ export default async function TipBox({ id }: TipBoxProps) {
         Advice #{id}
       </h1>
       <p className="text-[1.75rem] text-lightCyan max-w-[24ch] leading-[2.5rem] p-5 sm:p-0">
-        " {advice} "
+        &quot; {advice} &quot;
       </p>
 
       <div className="relative py-5">
@@ -36,6 +36,7 @@ export default async function TipBox({ id }: TipBoxProps) {
       </div>
       <Link
         href={`${nextRandom}`}
+        aria-label="next tip"
         className="relative flex justify-center items-center w-16 h-16 -mb-8 rounded-full bg-neonGreen hover:shadow-[0px_0px_20px_2px] transition hover:shadow-neonGreen text-black"
       >
         <Image alt="" width={24} height={24} src={diceIcon} />

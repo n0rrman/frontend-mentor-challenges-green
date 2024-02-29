@@ -13,8 +13,10 @@ The challenges are solved using [Next.js](https://nextjs.org/), [Tailwind CSS](h
 | Challenge | Level | Repository | Live version | Screenshot |
 |-----------|-------|------------|--------------|------------|
 | [Testimonials grid section](https://www.frontendmentor.io/solutions/testimonials-grid-section-tailwindcss-and-nextjs-pyf7uz8oML)  | 🟢Junior | [testimonials-grid-section](https://github.com/n0rrman/frontend-mentor-challenges-green/tree/main/testimonials-grid-section) | [Vercel](https://testimonials-grid-section-brown-eight.vercel.app) | ![Screenshot of the solved challenge](testimonials-grid-section/design/screenshot.png) |
+| [-](https://www.frontendmentor.io/solutions/advice-generator-app-tailwindcss-and-nextjs-xF8NQTU5DO)  | 🟢Junior | [advice-generator-app](https://github.com/n0rrman/frontend-mentor-challenges-green/tree/main/advice-generator-app) | [Vercel](https://advice-generator-app-alpha-tan.vercel.app) | ![Screenshot of the solved challenge](advice-generator-app/design/screenshot.png) |
+
 
 
 <!--
-| [-](...)  | 🔵Newbie | [...](https://github.com/n0rrman/frontend-mentor-challenges/tree/main/...) | [Vercel](https://....vercel.app) | ![Screenshot of the solved challenge](.../design/screenshot.png) |
+| [-](...)  | 🟢Junior | [...](https://github.com/n0rrman/frontend-mentor-challenges/tree/main/...) | [Vercel](https://....vercel.app) | ![Screenshot of the solved challenge](.../design/screenshot.png) |
 -->
