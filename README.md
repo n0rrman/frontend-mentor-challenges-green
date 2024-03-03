@@ -14,6 +14,7 @@ The challenges are solved using [Next.js](https://nextjs.org/), [Tailwind CSS](h
 |-----------|-------|------------|--------------|------------|
 | [Testimonials grid section](https://www.frontendmentor.io/solutions/testimonials-grid-section-tailwindcss-and-nextjs-pyf7uz8oML)  | 🟢Junior | [testimonials-grid-section](https://github.com/n0rrman/frontend-mentor-challenges-green/tree/main/testimonials-grid-section) | [Vercel](https://testimonials-grid-section-brown-eight.vercel.app) | ![Screenshot of the solved challenge](testimonials-grid-section/design/screenshot.png) |
 | [Advice generator app](https://www.frontendmentor.io/solutions/advice-generator-app-tailwindcss-and-nextjs-xF8NQTU5DO)  | 🟢Junior | [advice-generator-app](https://github.com/n0rrman/frontend-mentor-challenges-green/tree/main/advice-generator-app) | [Vercel](https://advice-generator-app-alpha-tan.vercel.app) | ![Screenshot of the solved challenge](advice-generator-app/design/screenshot.png) |
+| [Fylo data storage component](https://www.frontendmentor.io/solutions/fylo-data-storage-component-tailwindcss-and-nextjs-W41eOWyaKC)  | 🟢Junior | [fylo-data-storage-component](https://github.com/n0rrman/frontend-mentor-challenges-green/tree/main/fylo-data-storage-component) | [Vercel](https://fylo-data-storage-component-one-sooty.vercel.app) | ![Screenshot of the solved challenge](fylo-data-storage-component/design/screenshot.png) |
 
 
 

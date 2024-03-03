@@ -10,8 +10,8 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Solution at Frontend Mentor](...)
-- Live Site URL: [Live version on Vercel](...)
+- Solution URL: [Solution at Frontend Mentor](https://www.frontendmentor.io/solutions/fylo-data-storage-component-tailwindcss-and-nextjs-W41eOWyaKC)
+- Live Site URL: [Live version on Vercel](https://fylo-data-storage-component-one-sooty.vercel.app)
 
 
 ### Built with

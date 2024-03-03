@@ -16,7 +16,7 @@ export default function Home() {
   const remaining_storage = max_storage - used_storage;
 
   return (
-    <div className="flex justify-center items-center min-h-screen px-6">
+    <main className="flex justify-center items-center min-h-screen px-6">
       <div className="absolute bottom-0 w-full h-screen z-0">
         <picture className="w-auto h-auto">
           <source media="(min-width: 60rem)" srcSet={bgDesktop.src} />
@@ -27,23 +27,32 @@ export default function Home() {
           />
         </picture>
       </div>
-      <main className="flex flex-col w-full items-center justify-center md:flex-row gap-4 sm:gap-[1.875rem] z-10 translate-y-0 sm:-translate-y-2.5">
+      <section className="flex flex-col w-full items-center justify-center md:flex-row gap-4 sm:gap-[1.875rem] z-10 translate-y-0 sm:-translate-y-2.5">
         <div className="flex flex-col justify-center items-start p-10 bg-darkBlue shadow-2xl rounded-lg rounded-tr-[6.4em] gap-[2.05rem] max-w-[21.875rem] w-full">
           <div className="relative w-[8.4375rem] h-[2.5rem]">
             <Image src={logo} alt="" fill />
           </div>
           <div className="flex flex-row gap-4">
-            <button className="bg-veryDarkBlue rounded-lg p-3 w-12 h-12">
+            <button
+              aria-label="document"
+              className="bg-veryDarkBlue rounded-lg p-3 w-12 h-12"
+            >
               <div className="mx-auto relative h-full aspect-[0.833]">
                 <Image src={documentIcon} alt="" fill />
               </div>
             </button>
-            <button className="bg-veryDarkBlue rounded-lg p-3 w-12 h-12">
+            <button
+              aria-label="folder"
+              className="bg-veryDarkBlue rounded-lg p-3 w-12 h-12"
+            >
               <div className="relative w-full aspect-[1.2]">
                 <Image src={folderIcon} alt="" fill />
               </div>
             </button>
-            <button className="bg-veryDarkBlue rounded-lg p-3 w-12 h-12">
+            <button
+              aria-label="upload"
+              className="bg-veryDarkBlue rounded-lg p-3 w-12 h-12"
+            >
               <div className="relative w-full aspect-[1.5]">
                 <Image src={uploadIcon} alt="" fill />
               </div>
@@ -82,7 +91,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
