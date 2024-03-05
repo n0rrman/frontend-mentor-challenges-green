@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <main>
+      <main className="text-[1.125rem] text-center">
         <section>
           <h1>A history of everything you copy</h1>
 
