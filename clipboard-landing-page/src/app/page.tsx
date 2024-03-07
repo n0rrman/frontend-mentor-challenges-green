@@ -23,46 +23,46 @@ import igIcon from "/public/icon-instagram.svg";
 export default function Home() {
   return (
     <>
-      <main className="text-[1.125rem] text-center text-grayishBlue space-y-28">
+      <main className="flex flex-col items-center justify-center text-[1.125rem] text-center text-grayishBlue space-y-20 py-8">
         <div className="absolute inset-0 flex items-start justify-start w-full h-full ">
-          <div className="relative w-full h-1/3">
+          <div className="relative w-full h-[23rem]">
             <Image src={bgDesktop} className="object-cover" fill alt="" />
           </div>
         </div>
-        <section className="flex flex-col justify-center items-center z-20 gap-4">
+        <section className="flex flex-col justify-center items-center z-20 gap-2.5 py-[1.23rem] max-w-[45rem]">
           <Image width={125} height={125} alt="logo" src={logo} />
-          <h1 className="text-5xl font-semibold text-darkGrayishBlue">
+          <h1 className="text-[2.8rem] font-semibold text-darkGrayishBlue pt-10">
             A history of everything you copy
           </h1>
 
-          <p>
+          <p className="text-[1.275rem]">
             Clipboard allows you to track and organize everything you copy.
             Instantly access your clipboard on all your devices.
           </p>
-          <div className="flex flex-row text-white font-semibold gap-4">
-            <button className="bg-strongCyan rounded-3xl py-2 px-5">
+          <div className="flex flex-row text-white/90 font-semibold gap-4 py-10">
+            <button className="bg-strongCyan shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for iOS
             </button>
-            <button className="bg-lightBlue rounded-3xl py-2 px-5">
+            <button className="bg-lightBlue shadow-xl shadow-lightBlue/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for Mac
             </button>
           </div>
         </section>
 
-        <section className="flex flex-col justify-center items-center z-20 gap-4">
-          <h1 className="text-4xl font-semibold text-darkGrayishBlue">
+        <section className="flex flex-col justify-center items-center z-20 gap-4 py-1.5">
+          <h1 className="text-[2.2rem] font-semibold text-darkGrayishBlue">
             Keep track of your snippets
           </h1>
-          <p>
+          <p className="max-w-[45rem] leading-7">
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
           </p>
-          <div className="flex flex-row gap-10">
-            <div className="relative w-full h-auto">
-              <Image src={compImg} fill alt="" />
+          <div className="flex flex-row gap-10 py-16">
+            <div className="relative w-[67.5rem] aspect-[1.3146853147] overflow-hidden">
+              <Image className="-translate-x-7" src={compImg} fill alt="" />
             </div>
-            <div className="flex flex-col gap-2 text-left">
+            <div className="flex flex-col gap-2 text-left p-16">
               <h2 className="text-2xl font-semibold text-darkGrayishBlue">
                 Quick Search
               </h2>
@@ -145,8 +145,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
-        <section className="flex flex-col justify-center items-center z-20 gap-8">
           <div className="grid grid-cols-5 w-full gap-10">
             <div className="relative w-auto h-10">
               <Image src={googleLogo} fill alt="" />
@@ -164,7 +162,8 @@ export default function Home() {
               <Image src={vgLogo} fill alt="" />
             </div>
           </div>
-
+        </section>
+        <section className="flex flex-col justify-center items-center z-20 gap-8 max-w-[45rem] pb-8">
           <h1 className="text-3xl font-semibold text-darkGrayishBlue">
             Clipboard for iOS and Mac OS
           </h1>
@@ -174,35 +173,35 @@ export default function Home() {
             with iCloud and you&apos;re ready to start adding to your clipboard.
           </p>
 
-          <div className="flex flex-row text-white font-semibold gap-4">
-            <button className="bg-strongCyan rounded-3xl py-2 px-5">
+          <div className="flex flex-row text-white/90 font-semibold gap-4 py-10">
+            <button className="bg-strongCyan shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for iOS
             </button>
-            <button className="bg-lightBlue rounded-3xl py-2 px-5">
+            <button className="bg-lightBlue shadow-xl shadow-lightBlue/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for Mac
             </button>
           </div>
         </section>
       </main>
-      <footer className="flex flex-row gap-20 items-center justify-center bg-grayishBlue/10 p-10 mt-12">
-        <div>
-          <Image width={45} height={45} alt="logo" src={logo} />
+      <footer className="flex flex-row gap-[8.5rem] text-darkGrayishBlue/80 text-[1.1rem] items-center justify-center bg-grayishBlue/10 py-10 px-[10.3rem] mt-12">
+        <div className="-translate-y-1">
+          <Image width={54} height={54} alt="logo" src={logo} />
         </div>
-        <div className="grid gap-x-10 grid-flow-col grid-cols-3 grid-rows-2 mr-auto">
+        <div className="grid gap-x-[4.8rem] gap-y-4 grid-flow-col grid-cols-3 grid-rows-2 mr-auto">
           <div>FAQs</div>
           <div>Contact Us</div>
           <div>Privacy Policy</div>
           <div>Press Kit</div>
           <div>Install Guide</div>
         </div>
-        <div className="flex flex-row gap-10">
-          <div className="relative w-5 h-5">
+        <div className="flex flex-row justify-center items-center gap-6">
+          <div className="relative w-6 h-6">
             <Image src={fbIcon} fill alt="" />
           </div>
-          <div className="relative w-5 h-5">
+          <div className="relative w-6 h-5">
             <Image src={xIcon} fill alt="" />
           </div>
-          <div className="relative w-5 h-5">
+          <div className="relative w-6 h-6">
             <Image src={igIcon} fill alt="" />
           </div>
         </div>
