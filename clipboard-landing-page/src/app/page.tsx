@@ -40,10 +40,10 @@ export default function Home() {
             Instantly access your clipboard on all your devices.
           </p>
           <div className="flex flex-row text-white/90 font-semibold gap-4 py-10">
-            <button className="bg-strongCyan shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
+            <button className="bg-strongCyan hover:bg-opacity-80 transition-all shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for iOS
             </button>
-            <button className="bg-lightBlue shadow-xl shadow-lightBlue/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
+            <button className="bg-lightBlue hover:bg-opacity-80 transition-all shadow-xl shadow-lightBlue/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for Mac
             </button>
           </div>
@@ -89,11 +89,11 @@ export default function Home() {
           <h1 className="text-4xl font-semibold text-darkGrayishBlue">
             Access Clipboard anywhere
           </h1>
-          <p>
+          <p className="max-w-[45rem]">
             Whether you&apos;re on the go, or at your computer, you can access
             all your Clipboard snippets in a few simple clicks.
           </p>
-          <div className="relative w-[40rem] h-[20rem]">
+          <div className="relative w-[56.56rem] h-[35.92rem] mt-20">
             <Image src={tabletImg} fill alt="" />
           </div>
         </section>
@@ -105,7 +105,7 @@ export default function Home() {
 
           <p>We&apos;ve got the tools to boost your productivity.</p>
 
-          <div className="grid grid-cols-3 py-8">
+          <div className="grid grid-cols-3 pt-8 pb-40 px-32">
             <div className="flex flex-col gap-5 items-center justify-center">
               <div className="relative w-10 h-10">
                 <Image src={blackWorklist} fill alt="" />
@@ -174,10 +174,10 @@ export default function Home() {
           </p>
 
           <div className="flex flex-row text-white/90 font-semibold gap-4 py-10">
-            <button className="bg-strongCyan shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
+            <button className="bg-strongCyan hover:bg-opacity-80 transition-all shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for iOS
             </button>
-            <button className="bg-lightBlue shadow-xl shadow-lightBlue/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
+            <button className="bg-lightBlue hover:bg-opacity-80 transition-all shadow-xl shadow-lightBlue/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for Mac
             </button>
           </div>
