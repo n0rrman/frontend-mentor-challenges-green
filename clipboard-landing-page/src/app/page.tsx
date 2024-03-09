@@ -39,7 +39,7 @@ export default function Home() {
             Clipboard allows you to track and organize everything you copy.
             Instantly access your clipboard on all your devices.
           </p>
-          <div className="flex flex-row text-white/90 font-semibold gap-4 py-10">
+          <div className="flex flex-col md:flex-row text-white/90 font-semibold gap-4 py-10">
             <button className="bg-strongCyan hover:bg-opacity-80 transition-all shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for iOS
             </button>
@@ -58,29 +58,42 @@ export default function Home() {
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
           </p>
-          <div className="flex flex-row gap-10 py-16">
-            <div className="relative w-[67.5rem] aspect-[1.3146853147] overflow-hidden">
-              <Image className="-translate-x-7" src={compImg} fill alt="" />
+          <div className="flex flex-col md:flex-row gap-10 py-16">
+            <div className="relative w-[53rem] aspect-[1.3146853147] overflow-hidden">
+              <Image
+                className="translate-x-0 md:-translate-x-8"
+                src={compImg}
+                fill
+                alt=""
+              />
             </div>
-            <div className="flex flex-col gap-2 text-left p-16">
-              <h2 className="text-2xl font-semibold text-darkGrayishBlue">
-                Quick Search
-              </h2>
-              <p>
-                Easily search your snippets by content, category, web address,
-                application, and more.
-              </p>
-              <h2 className="text-2xl font-semibold text-darkGrayishBlue">
-                iCloud Sync
-              </h2>
-              <p>Instantly saves and syncs snippets across all your devices.</p>
-              <h2 className="text-2xl font-semibold text-darkGrayishBlue">
-                Complete History
-              </h2>
-              <p>
-                Retrieve any snippets from the first moment you started using
-                the app.
-              </p>
+            <div className="flex flex-col gap-20 md:text-left p-10 w-full md:w-1/2 text-center">
+              <div>
+                <h2 className="text-2xl font-semibold text-darkGrayishBlue">
+                  Quick Search
+                </h2>
+                <p>
+                  Easily search your snippets by content, category, web address,
+                  application, and more.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-semibold text-darkGrayishBlue">
+                  iCloud Sync
+                </h2>
+                <p>
+                  Instantly saves and syncs snippets across all your devices.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-semibold text-darkGrayishBlue">
+                  Complete History
+                </h2>
+                <p>
+                  Retrieve any snippets from the first moment you started using
+                  the app.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -105,7 +118,7 @@ export default function Home() {
 
           <p>We&apos;ve got the tools to boost your productivity.</p>
 
-          <div className="grid grid-cols-3 pt-8 pb-40 px-32">
+          <div className="grid grid-cols-1 md:grid-cols-3 pt-8 pb-40 px-32">
             <div className="flex flex-col gap-5 items-center justify-center">
               <div className="relative w-10 h-10">
                 <Image src={blackWorklist} fill alt="" />
@@ -145,20 +158,20 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-5 w-full gap-10">
-            <div className="relative w-auto h-10">
+          <div className="grid grid-cols-1 md:grid-cols-5 max-w-[75rem] gap-20 justify-center items-center pb-1">
+            <div className="relative w-[165px] h-[49px]">
               <Image src={googleLogo} fill alt="" />
             </div>
-            <div className="relative w-auto h-10">
+            <div className="relative w-[139px] h-[51px]">
               <Image src={ibmLogo} fill alt="" />
             </div>
-            <div className="relative w-auto h-10">
+            <div className="relative w-[161px] h-[35px]">
               <Image src={microsoftLogo} fill alt="" />
             </div>
-            <div className="relative w-auto h-10">
+            <div className="relative w-[135px] h-[56px]">
               <Image src={hpLogo} fill alt="" />
             </div>
-            <div className="relative w-auto h-10">
+            <div className="relative w-[125px] h-[30px]">
               <Image src={vgLogo} fill alt="" />
             </div>
           </div>
@@ -173,7 +186,7 @@ export default function Home() {
             with iCloud and you&apos;re ready to start adding to your clipboard.
           </p>
 
-          <div className="flex flex-row text-white/90 font-semibold gap-4 py-10">
+          <div className="flex flex-col md:flex-row text-white/90 font-semibold gap-4 py-10">
             <button className="bg-strongCyan hover:bg-opacity-80 transition-all shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for iOS
             </button>
@@ -183,11 +196,11 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-row gap-[8.5rem] text-darkGrayishBlue/80 text-[1.1rem] items-center justify-center bg-grayishBlue/10 py-10 px-[10.3rem] mt-12">
+      <footer className="flex flex-col md:flex-row gap-[8.5rem] text-darkGrayishBlue/80 text-[1.1rem] items-center justify-center bg-grayishBlue/10 py-10 px-[10.3rem] mt-12">
         <div className="-translate-y-1">
           <Image width={54} height={54} alt="logo" src={logo} />
         </div>
-        <div className="grid gap-x-[4.8rem] gap-y-4 grid-flow-col grid-cols-3 grid-rows-2 mr-auto">
+        <div className="grid gap-x-[4.8rem] text-center md:text-left gap-y-4 grid-flow-col grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 md:mr-auto">
           <div>FAQs</div>
           <div>Contact Us</div>
           <div>Privacy Policy</div>
