@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-pink: 322deg 100% 66%;
+
+    --color-paleCyan: 193deg 100% 96%;
+    --color-darkCyan: 192deg 100% 9%;
+    --color-grayishBlue: 208deg 11% 55%;
+  }
+}
