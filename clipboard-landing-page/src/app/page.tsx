@@ -23,7 +23,7 @@ import igIcon from "/public/icon-instagram.svg";
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col items-center justify-center text-[1.125rem] text-center text-grayishBlue space-y-20 py-8">
+      <main className="flex flex-col items-center justify-center text-[1.1275rem] text-center text-grayishBlue space-y-20 py-8">
         <div className="absolute inset-0 flex items-start justify-start w-full h-full ">
           <div className="relative w-full h-[23rem]">
             <Image src={bgDesktop} className="object-cover" fill alt="" />
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <section className="flex flex-col justify-center items-center z-20 gap-2.5 py-[1.23rem] max-w-[45rem]">
           <Image width={125} height={125} alt="logo" src={logo} />
-          <h1 className="text-[2.8rem] font-semibold text-darkGrayishBlue pt-10">
+          <h1 className="text-[2.775rem] font-semibold text-darkGrayishBlue pt-10">
             A history of everything you copy
           </h1>
 
@@ -39,7 +39,7 @@ export default function Home() {
             Clipboard allows you to track and organize everything you copy.
             Instantly access your clipboard on all your devices.
           </p>
-          <div className="flex flex-col md:flex-row text-white/90 font-semibold gap-4 py-10">
+          <div className="flex flex-col md:flex-row text-white/80 font-semibold gap-4 py-10">
             <button className="bg-strongCyan hover:bg-opacity-80 transition-all shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for iOS
             </button>
@@ -50,46 +50,46 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col justify-center items-center z-20 gap-4 py-1.5">
-          <h1 className="text-[2.2rem] font-semibold text-darkGrayishBlue">
+          <h1 className="text-[2.175rem] font-semibold text-darkGrayishBlue">
             Keep track of your snippets
           </h1>
-          <p className="max-w-[45rem] leading-7">
+          <p className="max-w-[45rem] leading-7 text-[1.15rem]">
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
           </p>
-          <div className="flex flex-col md:flex-row gap-10 py-16">
-            <div className="relative w-[53rem] aspect-[1.3146853147] overflow-hidden">
+          <div className="grid grid-cols-2 gap-12 mt-[4.25rem]">
+            <div className="relative w-[47rem] aspect-[1.3146853147] overflow-hidden">
               <Image
-                className="translate-x-0 md:-translate-x-8"
+                className="translate-x-0 md:-translate-x-8 2xl:translate-x-0"
                 src={compImg}
                 fill
                 alt=""
               />
             </div>
-            <div className="flex flex-col gap-20 md:text-left p-10 w-full md:w-1/2 text-center">
-              <div>
-                <h2 className="text-2xl font-semibold text-darkGrayishBlue">
+            <div className="flex flex-col gap-y-[3.6rem] text-[1rem] md:text-left pl-[5.4rem] pt-[4.6rem] text-center">
+              <div className="space-y-3">
+                <h2 className="text-[1.45rem] leading-6 font-semibold text-darkGrayishBlue">
                   Quick Search
                 </h2>
-                <p>
+                <p className="max-w-[22rem] leading-[1.85rem]">
                   Easily search your snippets by content, category, web address,
                   application, and more.
                 </p>
               </div>
-              <div>
-                <h2 className="text-2xl font-semibold text-darkGrayishBlue">
+              <div className="space-y-3">
+                <h2 className="text-[1.45rem] leading-6 font-semibold text-darkGrayishBlue">
                   iCloud Sync
                 </h2>
-                <p>
+                <p className="max-w-[22rem] leading-[1.85rem]">
                   Instantly saves and syncs snippets across all your devices.
                 </p>
               </div>
-              <div>
-                <h2 className="text-2xl font-semibold text-darkGrayishBlue">
+              <div className="space-y-3">
+                <h2 className="text-[1.45rem] leading-6 font-semibold text-darkGrayishBlue">
                   Complete History
                 </h2>
-                <p>
+                <p className="max-w-[22rem] leading-[1.85rem]">
                   Retrieve any snippets from the first moment you started using
                   the app.
                 </p>
@@ -98,27 +98,29 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col justify-center items-center z-20 gap-4">
-          <h1 className="text-4xl font-semibold text-darkGrayishBlue">
+        <section className="flex flex-col justify-center items-center z-20 gap-4 pt-[3.9rem]">
+          <h1 className="text-[2.175rem] font-semibold text-darkGrayishBlue">
             Access Clipboard anywhere
           </h1>
-          <p className="max-w-[45rem]">
+          <p className="max-w-[45rem] text-[1.15rem] leading-[1.85rem] mb-[5.25rem]">
             Whether you&apos;re on the go, or at your computer, you can access
             all your Clipboard snippets in a few simple clicks.
           </p>
-          <div className="relative w-[56.56rem] h-[35.92rem] mt-20">
+          <div className="flex justify-center items-center relative w-[56.5rem] h-[36rem] translate-x-0.5">
             <Image src={tabletImg} fill alt="" />
           </div>
         </section>
 
-        <section className="flex flex-col justify-center items-center z-20 gap-8">
-          <h1 className="text-4xl font-semibold text-darkGrayishBlue">
+        <section className="flex flex-col justify-center items-center z-20 gap-4">
+          <h1 className="text-[2.175rem] font-semibold text-darkGrayishBlue -mt-3">
             Supercharge your workflow
           </h1>
 
-          <p>We&apos;ve got the tools to boost your productivity.</p>
+          <p className="text-[1.15rem]">
+            We&apos;ve got the tools to boost your productivity.
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 pt-8 pb-40 px-32">
+          <div className="grid grid-cols-1 md:grid-cols-3 pt-14 pb-40 px-32">
             <div className="flex flex-col gap-5 items-center justify-center">
               <div className="relative w-10 h-10">
                 <Image src={blackWorklist} fill alt="" />
@@ -126,14 +128,14 @@ export default function Home() {
               <h2 className="text-2xl font-semibold text-darkGrayishBlue">
                 Create blacklists
               </h2>
-              <p>
+              <p className="">
                 Ensure sensitive information never makes its way to your
                 clipboard by excluding certain sources.
               </p>
             </div>
 
             <div className="flex flex-col gap-5 items-center justify-center">
-              <div className="relative w-10 h-10">
+              <div className="relative w-8 h-8">
                 <Image src={textWorklist} fill alt="" />
               </div>
               <h2 className="text-2xl font-semibold text-darkGrayishBlue">
@@ -147,7 +149,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-5 items-center justify-center">
-              <div className="relative w-10 h-10">
+              <div className="relative w-10 h-7 py-3 m-5">
                 <Image src={previewWorklist} fill alt="" />
               </div>
               <h2 className="text-2xl font-semibold text-darkGrayishBlue">
@@ -177,7 +179,7 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col justify-center items-center z-20 gap-8 max-w-[45rem] pb-8">
-          <h1 className="text-3xl font-semibold text-darkGrayishBlue">
+          <h1 className="text-[2.2rem] font-semibold text-darkGrayishBlue">
             Clipboard for iOS and Mac OS
           </h1>
 
