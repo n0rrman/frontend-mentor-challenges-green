@@ -1,10 +1,28 @@
+import Image from "next/image";
+
+import { raleway } from "./fonts";
+import logo from "/public/logo.svg";
+
 export default function Home() {
   return (
     <>
-      <header>
-        <div>Features</div>
-        <div>Team</div>
-        <div>Sign In</div>
+      <header
+        className={`flex flex-row justify-between py-10 px-12 ${raleway.className}`}
+      >
+        <div className="relative w-[10.375rem] h-[3.0625rem]">
+          <Image fill src={logo} alt="" />
+        </div>
+        <nav className="flex flex-row gap-10 h-fit">
+          <div className="cursor-pointer border-b border-transparent hover:border-black transition-all">
+            Features
+          </div>
+          <div className="cursor-pointer border-b border-transparent hover:border-black transition-all">
+            Team
+          </div>
+          <div className="cursor-pointer border-b border-transparent hover:border-black transition-all">
+            Sign In
+          </div>
+        </nav>
       </header>
       <main>
         <section>
