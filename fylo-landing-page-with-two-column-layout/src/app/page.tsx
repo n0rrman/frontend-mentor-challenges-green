@@ -3,6 +3,7 @@ import Image from "next/image";
 import { raleway } from "./fonts";
 import logo from "/public/logo.svg";
 import heroImg from "/public/illustration-1.svg";
+import dividerDesktop from "/public/bg-curve-desktop.svg";
 import EmailForm from "@/components/email-form";
 
 export default function Home() {
@@ -46,7 +47,11 @@ export default function Home() {
             <Image src={heroImg} alt="" fill />
           </div>
         </section>
-        <section>
+        <div className="relative w-full h-[7.125rem] pointer-events-none select-none">
+          <Image fill alt="" src={dividerDesktop} />
+        </div>
+
+        <section className="bg-neutralBlue">
           <h1>Stay productive, wherever you are</h1>
 
           <p>
@@ -71,18 +76,24 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <h1>Get early access today</h1>
-          <p>
-            It only takes a minute to sign up and our free starter tier is
-            extremely generous. If you have any questions, our support team
-            would be happy to help you.
-          </p>
-
-          <button>Get Started For Free</button>
+        <section className="bg-primaryDesaturatedBlue text-neutralBlue grid grid-cols-2 py-32">
+          <div>
+            <h1>Get early access today</h1>
+            <p>
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <div>
+            <EmailForm
+              placeholder="email@example.com"
+              buttonText="Get Started For Free"
+            />
+          </div>
         </section>
 
-        <footer>
+        <footer className="bg-primaryDarkBlue text-neutralBlue">
           <div>Phone: +1-543-123-4567</div>
           <div>example@fylo.com</div>
           <div>About Us</div>
