@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import { raleway } from "./fonts";
 import logo from "/public/logo.svg";
+import heroImg from "/public/illustration-1.svg";
+import EmailForm from "@/components/email-form";
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
       <header
         className={`flex flex-row justify-between py-10 px-12 ${raleway.className}`}
       >
-        <div className="relative w-[10.375rem] h-[3.0625rem]">
+        <div className="relative w-[10.375rem] h-[3.0625rem] cursor-pointer">
           <Image fill src={logo} alt="" />
         </div>
         <nav className="flex flex-row gap-10 h-fit">
@@ -25,15 +27,24 @@ export default function Home() {
         </nav>
       </header>
       <main>
-        <section>
-          <h1>All your files in one secure location, accessible anywhere.</h1>
-          <p>
-            Fylo stores your most important files in one secure location. Access
-            them wherever you need, share and collaborate with friends, family,
-            and co-workers.
-          </p>
-
-          <button>Get Started</button>
+        <section className="grid grid-cols-2 px-16 py-20">
+          <div className="flex flex-col gap-4">
+            <h1 className="text-4xl font-bold">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p className="text-lg">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <EmailForm
+              placeholder="Enter your email..."
+              buttonText="Get Started"
+            />
+          </div>
+          <div className="relative w-full aspect-[1.35]">
+            <Image src={heroImg} alt="" fill />
+          </div>
         </section>
         <section>
           <h1>Stay productive, wherever you are</h1>
