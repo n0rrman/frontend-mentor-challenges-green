@@ -93,17 +93,29 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="bg-primaryDarkBlue text-neutralBlue">
-          <div>Phone: +1-543-123-4567</div>
-          <div>example@fylo.com</div>
-          <div>About Us</div>
-          <div>Jobs</div>
-          <div>Press</div>
-          <div>Blog</div>
+        <footer className="bg-primaryDarkBlue text-neutralBlue p-20">
+          <div className="relative w-[10.375rem] h-[3.0625rem] cursor-pointer">
+            <Image className="text-white bg-clip-text" fill src={logo} alt="" />
+          </div>
+          <div className="grid grid-cols-4">
+            <div>
+              <div>Phone: +1-543-123-4567</div>
+              <div>example@fylo.com</div>
+            </div>
+            <div className="mx-auto">
+              <div>About Us</div>
+              <div>Jobs</div>
+              <div>Press</div>
+              <div>Blog</div>
+            </div>
 
-          <div>Contact Us</div>
-          <div>Terms</div>
-          <div>Privacy</div>
+            <div className="mx-auto">
+              <div>Contact Us</div>
+              <div>Terms</div>
+              <div>Privacy</div>
+            </div>
+            <div className="flex flex-row">F B I</div>
+          </div>
         </footer>
       </main>
     </>
