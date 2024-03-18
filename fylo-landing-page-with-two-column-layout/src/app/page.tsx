@@ -3,6 +3,7 @@ import Image from "next/image";
 import { raleway } from "./fonts";
 import logo from "/public/logo.svg";
 import heroImg from "/public/illustration-1.svg";
+import sectionImg from "/public/illustration-2.svg";
 import dividerDesktop from "/public/bg-curve-desktop.svg";
 import EmailForm from "@/components/email-form";
 
@@ -51,34 +52,48 @@ export default function Home() {
           <Image fill alt="" src={dividerDesktop} />
         </div>
 
-        <section className="bg-neutralBlue">
-          <h1>Stay productive, wherever you are</h1>
+        <section className="grid grid-cols-2 bg-neutralBlue p-20">
+          <div className="flex flex-col gap-4">
+            <h1 className="font-bold text-3xl">
+              Stay productive, wherever you are
+            </h1>
 
-          <p>
-            Never let location be an issue when accessing your files. Fylo has
-            you covered for all of your file storage needs.
-          </p>
-          <p>
-            Securely share files and folders with friends, family and colleagues
-            for live collaboration. No email attachments required!
-          </p>
+            <p>
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
 
-          <div>See how Fylo works</div>
-          <div>
-            Fylo has improved our team productivity by an order of magnitude.
-            Since making the switch our team has become a well-oiled
-            collaboration machine.
+            <div className="text-accentCyan border-b border-accentCyan w-fit">
+              See how Fylo works
+            </div>
+
+            <div className="bg-white p-4 w-1/2 shadow-lg rounded text-sm">
+              <div>
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </div>
+
+              <div>
+                <div>Kyle Burton</div>
+                <div>Founder & CEO, Huddle</div>
+              </div>
+            </div>
           </div>
-
           <div>
-            <div>Kyle Burton</div>
-            <div>Founder & CEO, Huddle</div>
+            <div className="relative w-full aspect-[1.35]">
+              <Image fill alt="" src={sectionImg} />
+            </div>
           </div>
         </section>
 
-        <section className="bg-primaryDesaturatedBlue text-neutralBlue grid grid-cols-2 py-32">
+        <section className="bg-primaryDesaturatedBlue text-neutralBlue grid grid-cols-2 px-20 py-32">
           <div>
-            <h1>Get early access today</h1>
+            <h1 className="text-3xl font-bold">Get early access today</h1>
             <p>
               It only takes a minute to sign up and our free starter tier is
               extremely generous. If you have any questions, our support team
