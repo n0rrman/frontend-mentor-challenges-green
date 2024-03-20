@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <>
       <header
-        className={`flex flex-row justify-between py-10 px-12 ${raleway.className}`}
+        className={`flex flex-row justify-between p-6 sm:py-[4.55rem] sm:px-[5rem] ${raleway.className}`}
       >
-        <div className="relative w-[10.375rem] h-[3.0625rem] cursor-pointer">
+        <div className="relative w-[10.375rem] aspect-[3.4] cursor-pointer">
           <Image fill src={logo} alt="" />
         </div>
-        <nav className="flex flex-row gap-10 h-fit">
+        <nav className="flex flex-row gap-[3.6rem] justify-center items-center text-[1rem]">
           <div className="cursor-pointer border-b border-transparent hover:border-black transition-all">
             Features
           </div>

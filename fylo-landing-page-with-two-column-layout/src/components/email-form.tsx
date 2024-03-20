@@ -13,27 +13,23 @@ export default function EmailForm({ buttonText, placeholder }: EmailFormProps) {
     errors: {},
   });
 
-  console.log(formState);
-  if (formState.errors.email) {
-    return <div>ERROR</div>;
-  } else {
-    return (
-      <>
-        <form action={action} className="flex flex-row gap-6">
-          <input
-            name="email"
-            className="border border-primaryDarkBlue w-72"
-            placeholder={placeholder}
-          />
-          <button
-            type="submit"
-            className="bg-accentBlue text-neutralBlue py-2 px-4"
-          >
-            {buttonText}
-          </button>
-        </form>
-        {!formState.success && <div>error</div>}
-      </>
-    );
-  }
+  console.log(formState.errors);
+  return (
+    <>
+      <form action={action} className="flex flex-row gap-6">
+        <input
+          name="email"
+          className="border border-primaryDarkBlue w-72"
+          placeholder={placeholder}
+        />
+        <button
+          type="submit"
+          className="bg-accentBlue text-neutralBlue py-2 px-4"
+        >
+          {buttonText}
+        </button>
+      </form>
+      {!formState.success && <div>{formState.errors.email?.at(0)}</div>}
+    </>
+  );
 }
