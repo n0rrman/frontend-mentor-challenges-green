@@ -16,5 +16,13 @@ export default function Home() {
 
 */
 
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <div>Day DD</div>
+
+      <div>Month MM</div>
+      <div>Year YYYY</div>
+      <div>-- years -- months -- days</div>
+    </div>
+  );
 }
