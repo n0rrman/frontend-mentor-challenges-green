@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-purple: 197deg 100% 46%;
+    --color-lightRed: 226deg 93% 47%;
+
+    --color-white: 0deg 0% 100%;
+    --color-offWhite: 0deg 0% 94%;
+    --color-lightGray: 0deg 0% 86%;
+    --color-smokeyGray: 0deg 1% 44%;
+    --color-offBlack: 0deg 0% 8%;
+  }
+}
