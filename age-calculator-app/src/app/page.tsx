@@ -17,12 +17,17 @@ export default function Home() {
 */
 
   return (
-    <div>
-      <div>Day DD</div>
+    <div className="flex justify-center items-center min-h-screen">
+      <main className="bg-white rounded-2xl rounded-br-[4rem] p-8">
+        <div className="flex flex-row border-b">
+          <div>Day DD</div>
 
-      <div>Month MM</div>
-      <div>Year YYYY</div>
-      <div>-- years -- months -- days</div>
+          <div>Month MM</div>
+          <div>Year YYYY</div>
+        </div>
+
+        <div>-- years -- months -- days</div>
+      </main>
     </div>
   );
 }
