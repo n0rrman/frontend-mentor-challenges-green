@@ -10,7 +10,7 @@ export default function ResultDisplay({
   days,
 }: ResultDisplayProps) {
   return (
-    <div className="flex flex-col font-bold italic text-8xl">
+    <div className="flex flex-col font-bold italic text-8xl text-offBlack">
       <div>
         <span className="text-purple">{years}</span>
         years

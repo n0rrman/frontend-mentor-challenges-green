@@ -10,10 +10,10 @@ export default function AgeCalculator() {
   const [months, setMonths] = useState("--");
   const [days, setDays] = useState("--");
   return (
-    <>
+    <div className="w-[45rem]">
       <DateInput />
       <CalcButton />
       <ResultDisplay years={years} months={months} days={days} />
-    </>
+    </div>
   );
 }
