@@ -29,6 +29,7 @@ export default function DateInput() {
         <div className="">Day</div>
         <input
           // value={days}
+          name="days"
           className="placeholder:text-smokeyGray text-offBlack border rounded-lg p-4 w-36 text-3xl"
           placeholder="DD"
         />
@@ -37,6 +38,7 @@ export default function DateInput() {
         <div>Month</div>
         <input
           // value={months}
+          name="months"
           className="placeholder:text-smokeyGray text-offBlack border rounded-lg p-4 w-36 text-3xl"
           placeholder="MM"
         />
@@ -45,6 +47,7 @@ export default function DateInput() {
         <div>Year</div>
         <input
           // value={years}
+          name="years"
           className="placeholder:text-smokeyGray text-offBlack border rounded-lg p-4 w-36 text-3xl"
           placeholder="YYYY"
         />
