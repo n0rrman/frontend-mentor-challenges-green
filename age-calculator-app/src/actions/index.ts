@@ -4,19 +4,17 @@ import { z } from "zod";
 
 
 const submitCalcSchema = z.object({
-    days: z.number().gte(1, { message: "too small" }).lte(31, { message: "too big"}),
-    months: z.number().gte(1, { message: "too small"}).lte(12, { message: "too big"}),
-    years: z.number().gte(0, { message: "too small"}).lte(new Date().getFullYear(), { message: "in future"})
+    days: z.number({ required_error: "This field is required"})
+        .gte(1, { message: "Must be a valid day" })
+        .lte(31, { message: "Must be a valid day" }),
+    months: z.number({ required_error: "This field is required"})
+        .gte(1, { message: "Must be a valid month" })
+        .lte(12, { message: "Must be a valid month" }),
+    years: z.number({ required_error: "This field is required"})
+        .gte(0, { message: "Must be a valid year"})
+        .lte(new Date().getFullYear(), { message: "Must be in the past"})
 })
 
-/*
-- Any field is empty when the form is submitted
-- The day number is not between 1-31
-- The month number is not between 1-12
-- The date is in the future
-- The date is invalid e.g. 31/04/1991 (there are 30 days in April)
-- **Bonus**: See the age numbers animate to their final number when the form is submitted
-*/
 
 interface SubmitCalcFormState {
     errors: {
@@ -25,26 +23,41 @@ interface SubmitCalcFormState {
         years?: string[];
     }
     success?: boolean;
+    payload?: {
+        days: string;
+        months: string;
+        years: string;
+    }
 }
 
 export async function submitCalcForm(formState: SubmitCalcFormState, formData: FormData): Promise<SubmitCalcFormState> {
 
-    const results = submitCalcSchema.safeParse({
-        days: Number(formData.get('days') || ""),
-        months: Number(formData.get('months') || ""),
-        years: Number(formData.get('years') || ""),
-    })
+    const days = Number(formData.get('days'));
+    const months = Number(formData.get('months'));
+    const years = Number(formData.get('years'));
 
-    
+    const results = submitCalcSchema.safeParse({ days, months, years })
+ 
     if(!results.success) {
-        console.log(results.error.flatten().fieldErrors)
         return {
-            errors: results.error.flatten().fieldErrors
+            errors: results.error.flatten().fieldErrors,
+            success: false,
         }
     }
+
+
+
+    // Check if date is valid, number of days per month
+    /// If not -> error @day
+
+
+    // Calculate age
+    //// if negative -> error @year
+    /// if pos -> return as string
 
     return {
         errors: {},
         success: true,
+        payload: { days: "10", months: "11", years: "12"}
     }
 }
