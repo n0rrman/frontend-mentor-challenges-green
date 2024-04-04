@@ -10,18 +10,20 @@ import { submitCalcForm } from "@/actions";
 export default function AgeCalculator() {
   const [formState, action] = useFormState(submitCalcForm, {
     errors: {},
+    success: false,
   });
 
-  const { errors, payload } = formState;
+  const { errors, success, payload } = formState;
 
   return (
     <form action={action} className="w-[45rem]">
       <DateInput errors={errors} />
       <CalcButton />
       <ResultDisplay
-        years={payload?.years || "- -"}
-        months={payload?.months || "- -"}
-        days={payload?.days || "- -"}
+        success={success}
+        years={payload?.years || "--"}
+        months={payload?.months || "--"}
+        days={payload?.days || "--"}
       />
     </form>
   );
