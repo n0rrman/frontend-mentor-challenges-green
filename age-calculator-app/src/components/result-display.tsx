@@ -14,7 +14,7 @@ export default function ResultDisplay({
   days,
 }: ResultDisplayProps) {
   return (
-    <div className="flex flex-col font-bold italic text-[6.5rem] leading-[7rem] tracking-[-0.26rem] text-offBlack">
+    <div className="flex flex-col font-bold italic text-[6.66rem] leading-[7rem] tracking-[-0.26rem] text-offBlack">
       <div>
         <span className={`${!success && "tracking-widest"} text-purple`}>
           {years}
