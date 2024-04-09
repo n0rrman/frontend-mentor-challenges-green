@@ -16,7 +16,7 @@ export default function AgeCalculator() {
   const { errors, success, payload } = formState;
 
   return (
-    <form action={action} className="w-[45.5rem] pb-3">
+    <form action={action} className="w-full lg:w-[45.5rem] pb-0 lg:pb-3">
       <DateInput errors={errors} />
       <CalcButton />
       <ResultDisplay
