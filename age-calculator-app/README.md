@@ -9,8 +9,8 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Solution at Frontend Mentor](...)
-- Live Site URL: [Live version on Vercel](...)
+- Solution URL: [Solution at Frontend Mentor](https://www.frontendmentor.io/solutions/age-calculator-app-tailwindcss-and-nextjs-8dPs8EEfuj)
+- Live Site URL: [Live version on Vercel](https://age-calculator-app-rho-self.vercel.app)
 
 
 ### Built with
