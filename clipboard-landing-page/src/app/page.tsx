@@ -59,7 +59,7 @@ export default function Home() {
             Mac and iOS apps will help you organize everything.
           </p>
           <div className="grid grid-cols-2 gap-12 mt-[4.25rem]">
-            <div className="relative w-[47rem] aspect-[1.3146853147] overflow-hidden">
+            <div className="relative w-10  md:w-[47rem] aspect-[1.3146853147] overflow-hidden">
               <Image
                 className="translate-x-0 md:-translate-x-8 2xl:translate-x-0"
                 src={compImg}
@@ -120,47 +120,47 @@ export default function Home() {
             We&apos;ve got the tools to boost your productivity.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 pt-14 pb-40 px-32">
-            <div className="flex flex-col gap-5 items-center justify-center">
-              <div className="relative w-10 h-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-start gap-6 pt-9 mt-0.5 pb-[8.6rem] px-[10rem] text-[0.97rem] leading-[1.9rem]">
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <div className="relative w-11 h-10 m-5">
                 <Image src={blackWorklist} fill alt="" />
               </div>
-              <h2 className="text-2xl font-semibold text-darkGrayishBlue">
+              <h2 className="text-[1.45rem] font-semibold text-darkGrayishBlue pt-1">
                 Create blacklists
               </h2>
-              <p className="">
+              <p className="tracking-wide">
                 Ensure sensitive information never makes its way to your
                 clipboard by excluding certain sources.
               </p>
             </div>
 
-            <div className="flex flex-col gap-5 items-center justify-center">
-              <div className="relative w-8 h-8">
-                <Image src={textWorklist} fill alt="" />
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <div className="relative w-10 h-10 m-5">
+                <Image className="py-1 px-0.5" src={textWorklist} fill alt="" />
               </div>
-              <h2 className="text-2xl font-semibold text-darkGrayishBlue">
+              <h2 className="text-[1.45rem] font-semibold text-darkGrayishBlue pt-1">
                 Plain text snippets
               </h2>
 
-              <p>
+              <p className="tracking-wide">
                 Remove unwanted formatting from copied text for a consistent
                 look.
               </p>
             </div>
 
-            <div className="flex flex-col gap-5 items-center justify-center">
-              <div className="relative w-10 h-7 py-3 m-5">
-                <Image src={previewWorklist} fill alt="" />
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <div className="relative w-12 h-10 m-5">
+                <Image className="py-1" src={previewWorklist} fill alt="" />
               </div>
-              <h2 className="text-2xl font-semibold text-darkGrayishBlue">
+              <h2 className="text-[1.45rem] font-semibold text-darkGrayishBlue pt-1">
                 Sneak preview
               </h2>
-              <p>
+              <p className="tracking-wide">
                 Quick preview of all snippets on your Clipboard for easy access.
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 max-w-[75rem] gap-20 justify-center items-center pb-1">
+          <div className="flex flex-col md:flex-row gap-[6rem] justify-center items-center pt-1 pb-[4.6rem]">
             <div className="relative w-[165px] h-[49px]">
               <Image src={googleLogo} fill alt="" />
             </div>
@@ -178,7 +178,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col justify-center items-center z-20 gap-8 max-w-[45rem] pb-8">
+        <section className="flex flex-col justify-center items-center z-20 gap-4 max-w-[45rem] pb-8">
           <h1 className="text-[2.2rem] font-semibold text-darkGrayishBlue">
             Clipboard for iOS and Mac OS
           </h1>
@@ -188,7 +188,7 @@ export default function Home() {
             with iCloud and you&apos;re ready to start adding to your clipboard.
           </p>
 
-          <div className="flex flex-col md:flex-row text-white/90 font-semibold gap-4 py-10">
+          <div className="flex flex-col md:flex-row text-white/90 font-semibold gap-4 pt-9 pb-10">
             <button className="bg-strongCyan hover:bg-opacity-80 transition-all shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for iOS
             </button>
