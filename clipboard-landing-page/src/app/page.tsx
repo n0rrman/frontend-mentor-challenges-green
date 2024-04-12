@@ -23,23 +23,23 @@ import igIcon from "/public/icon-instagram.svg";
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col items-center justify-center text-[1.1275rem] text-center text-grayishBlue space-y-20 py-8">
+      <main className="flex flex-col items-center justify-center text-[1.1275rem] text-center text-grayishBlue space-y-20 py-6 md:py-8">
         <div className="absolute inset-0 flex items-start justify-start w-full h-full ">
           <div className="relative w-full h-[23rem]">
             <Image src={bgDesktop} className="object-cover" fill alt="" />
           </div>
         </div>
-        <section className="flex flex-col justify-center items-center z-20 gap-2.5 py-[1.23rem] max-w-[45rem]">
+        <section className="flex flex-col justify-center items-center z-20 gap-2.5 py-[1.23rem] max-w-[45rem] px-8 sm:px-0">
           <Image width={125} height={125} alt="logo" src={logo} />
-          <h1 className="text-[2.775rem] font-semibold text-darkGrayishBlue pt-10">
+          <h1 className="text-[1.9rem] sm:text-[2.775rem] font-semibold text-darkGrayishBlue pt-10">
             A history of everything you copy
           </h1>
 
-          <p className="text-[1.275rem]">
+          <p className="text-[0.99rem] sm:text-[1.275rem]">
             Clipboard allows you to track and organize everything you copy.
             Instantly access your clipboard on all your devices.
           </p>
-          <div className="flex flex-col md:flex-row text-white/80 font-semibold gap-4 py-10">
+          <div className="flex flex-col md:flex-row text-white/80 font-semibold gap-4 py-10 w-full sm:w-max">
             <button className="bg-strongCyan hover:bg-opacity-80 transition-all shadow-xl shadow-strongCyan/20 tracking-wide rounded-[2rem] py-[0.8rem] px-[2.2rem] border border-b-[3px] border-black/10">
               Download for iOS
             </button>
@@ -58,7 +58,7 @@ export default function Home() {
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
           </p>
-          <div className="grid grid-cols-2 gap-12 mt-[4.25rem]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 mt-[4.25rem]">
             <div className="relative w-10  md:w-[47rem] aspect-[1.3146853147] overflow-hidden">
               <Image
                 className="translate-x-0 md:-translate-x-8 2xl:translate-x-0"
@@ -67,7 +67,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex flex-col gap-y-[3.6rem] text-[1rem] md:text-left pl-[5.4rem] pt-[4.6rem] text-center">
+            <div className="flex flex-col gap-y-[3.6rem] text-[1rem] md:text-left pl-0 md:pl-[5.4rem] pt-[4.6rem] text-center">
               <div className="space-y-3">
                 <h2 className="text-[1.45rem] leading-6 font-semibold text-darkGrayishBlue">
                   Quick Search
@@ -106,7 +106,7 @@ export default function Home() {
             Whether you&apos;re on the go, or at your computer, you can access
             all your Clipboard snippets in a few simple clicks.
           </p>
-          <div className="flex justify-center items-center relative w-[56.5rem] h-[36rem] translate-x-0.5">
+          <div className="flex justify-center items-center relative w-full h-20 md:w-[56.5rem] md:h-[36rem] translate-x-0.5">
             <Image src={tabletImg} fill alt="" />
           </div>
         </section>
@@ -198,16 +198,16 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col md:flex-row gap-[8.5rem] text-darkGrayishBlue/80 text-[1.1rem] items-center justify-center bg-grayishBlue/10 py-10 px-[10.3rem] mt-12">
+      <footer className="flex flex-col md:flex-row gap-[8.5rem] text-darkGrayishBlue/80 text-[1.1rem] items-center justify-center bg-grayishBlue/10 py-10 px-0 md:px-[10.3rem] mt-12">
         <div className="-translate-y-1">
           <Image width={54} height={54} alt="logo" src={logo} />
         </div>
-        <div className="grid gap-x-[4.8rem] text-center md:text-left gap-y-4 grid-flow-col grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 md:mr-auto">
-          <div>FAQs</div>
-          <div>Contact Us</div>
-          <div>Privacy Policy</div>
-          <div>Press Kit</div>
-          <div>Install Guide</div>
+        <div className="grid gap-x-[4.8rem] text-left gap-y-4 grid-flow-col grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 mr-0 md:mr-auto">
+          <div className="w-max">FAQs</div>
+          <div className="w-max">Contact Us</div>
+          <div className="w-max">Privacy Policy</div>
+          <div className="w-max">Press Kit</div>
+          <div className="w-max">Install Guide</div>
         </div>
         <div className="flex flex-row justify-center items-center gap-6">
           <div className="relative w-6 h-6">
