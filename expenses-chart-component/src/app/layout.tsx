@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dm.className}>{children}</body>
+      <body className={`${dm.className} bg-cream`}>{children}</body>
     </html>
   );
 }
