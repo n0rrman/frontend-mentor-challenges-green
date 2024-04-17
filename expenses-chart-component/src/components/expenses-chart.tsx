@@ -1,28 +1,15 @@
 import BalanceCard from "./balance-card";
+import SpendingCard from "./spending-card";
 
 interface ExpensesChartProps {
-  expenses: { day: string; amount: number }[];
+  spendings: { day: string; amount: number }[];
 }
 
-export default function ExpensesChart({ expenses }: ExpensesChartProps) {
+export default function ExpensesChart({ spendings }: ExpensesChartProps) {
   return (
-    <div className="w-[33.75rem]">
+    <div className="flex flex-col w-[33.75rem] gap-6">
       <BalanceCard balance={921.48} />
-
-      <h1>Spending - Last 7 days</h1>
-
-      <div>mon</div>
-      <div>tue</div>
-      <div>wed</div>
-      <div>thu</div>
-      <div>fri</div>
-      <div>sat</div>
-      <div>sun</div>
-
-      <div>Total this month</div>
-      <div>$478.33</div>
-      <div>+2.4%</div>
-      <div>from last month</div>
+      <SpendingCard spendings={spendings} total={478.33} trend="+2.4" />
     </div>
   );
 }
