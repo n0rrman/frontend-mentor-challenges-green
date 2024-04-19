@@ -18,7 +18,7 @@ export default function WeeklyView({ spendings }: WeeklyViewProps) {
   const renderedBars = spendings.map((spending) => {
     return (
       <div
-        className="flex flex-col-reverse gap-2 justify-start items-center py-6"
+        className="flex flex-col-reverse justify-start gap-2 items-center py-6"
         id={spending.day}
       >
         <div className="text-mediumBrown">{spending.day}</div>

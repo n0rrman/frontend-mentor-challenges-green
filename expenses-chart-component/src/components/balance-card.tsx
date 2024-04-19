@@ -8,7 +8,7 @@ interface BalanceCardProps {
 
 export default function BalanceCard({ balance }: BalanceCardProps) {
   return (
-    <div className="bg-softRed text-veryPaleOrange flex flex-row justify-between p-8 rounded-2xl">
+    <div className="bg-softRed text-veryPaleOrange flex flex-row justify-between py-6 px-8 rounded-2xl">
       <div className="flex flex-col gap-2 justify-between items-start">
         <div className="text-lg">My balance</div>
         <div className="text-3xl font-bold">${balance}</div>
