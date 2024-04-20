@@ -19,7 +19,7 @@ export default function WeeklyView({ spendings }: WeeklyViewProps) {
     return (
       <div
         className="flex flex-col-reverse justify-start gap-3 sm:gap-2 items-center pt-0 pb-6 sm:pt-6 sm:pb-7"
-        id={spending.day}
+        key={spending.day}
       >
         <div className="text-mediumBrown text-[0.7rem] sm:text-[0.95rem]">
           {spending.day}

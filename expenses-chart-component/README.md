@@ -10,8 +10,8 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: [Solution at Frontend Mentor](...)
-- Live Site URL: [Live version on Vercel](...)
+- Solution URL: [Solution at Frontend Mentor](https://www.frontendmentor.io/solutions/expenses-chart-component-tailwind-and-nextjs-cZhGPQH4ix)
+- Live Site URL: [Live version on Vercel](https://expenses-chart-component-ashen.vercel.app/)
 
 
 ### Built with
