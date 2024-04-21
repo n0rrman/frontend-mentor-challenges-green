@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={space.className}>{children}</body>
+      <body className={`${space.className} bg-lightGrayishCyan`}>
+        {children}
+      </body>
     </html>
   );
 }
