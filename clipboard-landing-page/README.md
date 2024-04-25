@@ -10,8 +10,8 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Solution at Frontend Mentor](...)
-- Live Site URL: [Live version on Vercel](...)
+- Solution URL: [Solution at Frontend Mentor](https://www.frontendmentor.io/solutions/clipboard-landing-page-tailwind-and-nextjs-h9sOK3kmDq)
+- Live Site URL: [Live version on Vercel](https://clipboard-landing-page-psi-orpin.vercel.app)
 
 
 ### Built with

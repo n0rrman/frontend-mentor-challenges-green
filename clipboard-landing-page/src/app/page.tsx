@@ -67,7 +67,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex flex-col gap-y-[3.6rem] text-[1rem] md:text-left pl-0 md:pl-[5.4rem] pt-4 mt:pt-[4.6rem] text-center">
+            <div className="flex flex-col gap-y-[3.6rem] text-[1rem] md:text-left pl-0 md:pl-[5.4rem] pt-4 md:pt-[4.6rem] text-center">
               <div className="space-y-3">
                 <h2 className="text-[1.45rem] leading-6 font-semibold text-darkGrayishBlue">
                   Quick Search
@@ -106,7 +106,7 @@ export default function Home() {
             Whether you&apos;re on the go, or at your computer, you can access
             all your Clipboard snippets in a few simple clicks.
           </p>
-          <div className="flex justify-center items-center relative w-[95vw] -m-10 aspect-[1.6] md:w-[56.5rem] md:h-[36rem] translate-x-0.5">
+          <div className="flex justify-center items-center relative w-[95vw] -mx-10 aspect-[1.6] md:w-[56.5rem] md:h-[36rem] translate-x-0.5">
             <Image src={tabletImg} fill alt="" />
           </div>
         </section>
@@ -202,7 +202,7 @@ export default function Home() {
         <div className="relative -translate-y-1 w-[3.375rem] aspect-square flex-shrink-0">
           <Image fill alt="logo" src={logo} />
         </div>
-        <div className="flex flex-col sm:grid gap-x-[4.8rem] items-center text-left gap-y-5 sm:gap-y-4 grid-flow-col grid-rows-3 lg:grid-rows-2 mr-0 md:mr-auto flex-shrink">
+        <div className="flex flex-col sm:grid gap-x-[5.8rem] items-center text-left gap-y-5 sm:gap-y-4 grid-flow-col grid-rows-3 lg:grid-rows-2 mr-0 md:mr-auto flex-shrink">
           <div className="w-max cursor-pointer hover:border-b-darkGrayishBlue/80 border-b-transparent border-b transition-all">
             FAQs
           </div>
