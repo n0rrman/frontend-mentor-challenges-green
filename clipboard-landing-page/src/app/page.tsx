@@ -59,7 +59,7 @@ export default function Home() {
             Mac and iOS apps will help you organize everything.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-10 sm:mt-[4.25rem]">
-            <div className="relative w-full lg:w-[47rem] aspect-[1.3146853147] overflow-hidden">
+            <div className="relative w-full lg:w-[40rem] xl:w-[47rem] aspect-[1.3146853147] overflow-hidden">
               <Image
                 className="translate-x-0 lg:-translate-x-8 2xl:translate-x-0"
                 src={compImg}
@@ -67,7 +67,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex flex-col gap-y-[3.6rem] text-[1rem] lg:text-left pl-0 lg:pl-[5.4rem] pt-4 lg:pt-[4.6rem] text-center">
+            <div className="flex flex-col gap-y-[3.6rem] text-[1rem] md:text-left pl-0 md:pl-[5.4rem] pt-4 mt:pt-[4.6rem] text-center">
               <div className="space-y-3">
                 <h2 className="text-[1.45rem] leading-6 font-semibold text-darkGrayishBlue">
                   Quick Search
