@@ -55,12 +55,22 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="relative w-full order-first sm:order-last aspect-[1.35] mt-[3.25rem] sm:mt-0 ">
-            <Image src={heroImg} alt="" fill />
+          <div className="relative w-full order-first sm:order-last aspect-[1.35] mt-[3.25rem] sm:mt-0">
+            <Image
+              className="px-0 md:px-32 lg:px-0"
+              src={heroImg}
+              alt=""
+              fill
+            />
           </div>
         </section>
         <div className="relative w-full h-[3.5rem] sm:h-[7.125rem] pointer-events-none select-none">
-          <Image fill alt="" src={dividerDesktop} />
+          <Image
+            className="object-cover mt-1"
+            fill
+            alt=""
+            src={dividerDesktop}
+          />
         </div>
 
         <section className="grid grid-cols-1 lg:grid-cols-[0.55fr,0.45fr] bg-neutralBlue gap-[4rem] px-7 sm:px-20 pt-0 sm:pt-14 pb-[6.55rem]">
@@ -121,7 +131,12 @@ export default function Home() {
           </div>
           <div className="order-first sm:order-last">
             <div className="relative w-full aspect-[1.30] mt-8">
-              <Image fill alt="" src={sectionImg} />
+              <Image
+                className="px-0 md:px-32 lg:px-0"
+                fill
+                alt=""
+                src={sectionImg}
+              />
             </div>
           </div>
         </section>

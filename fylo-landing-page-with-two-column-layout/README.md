@@ -11,8 +11,8 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 ### Links
 
-- Solution URL: [Solution at Frontend Mentor](...)
-- Live Site URL: [Live version on Vercel](...)
+- Solution URL: [Solution at Frontend Mentor](https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-tailwindcss-and-nextjs-rTlWP8loui)
+- Live Site URL: [Live version on Vercel](https://fylo-landing-page-with-two-column-layout-kappa.vercel.app)
 
 
 ### Built with
