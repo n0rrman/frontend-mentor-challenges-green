@@ -1,10 +1,14 @@
 import Image from "next/image";
 
+import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa6";
 import heroBg from "/public/bg-hero-desktop.svg";
 import heroImg from "/public/illustration-mockups.svg";
 import growingImg from "/public/illustration-grow-together.svg";
 import flowingImg from "/public/illustration-flowing-conversation.svg";
 import usersImg from "/public/illustration-your-users.svg";
+import locationIcon from "/public/icon-location.svg";
+import phoneIcon from "/public/icon-phone.svg";
+import emailIcon from "/public/icon-email.svg";
 import logo from "/public/logo.svg";
 import { headingFont } from "./fonts";
 import SectionCard from "@/components/section-card";
@@ -49,7 +53,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col px-[6.5rem] py-[10rem] gap-10">
+      <section className="flex flex-col px-[6.5rem] py-[10rem] mb-[8rem] gap-10">
         <SectionCard
           heading="Grow Together"
           content="Generate meaningful discussions with your audience and build a
@@ -76,25 +80,75 @@ export default function Home() {
         />
       </section>
 
-      <footer className="bg-darkCyan text-paleCyan">
-        <div>
-          <h2>Ready To Build Your Community?</h2>
-          <button>Get Started For Free</button>
+      <footer className="bg-darkCyan text-paleCyan/80 w-full px-32 py-16">
+        <div className="flex items-center justify-center">
+          <div className="flex flex-col gap-5 items-center -mt-[16rem] text-black px-20 py-10 shadow-[0px_0px_20px_rgba(0,0,0,0.1)] bg-white w-70 rounded-xl">
+            <h2 className={`${headingFont.className} text-3xl font-bold`}>
+              Ready To Build Your Community?
+            </h2>
+            <button className="bg-pink text-white py-5 px-8 rounded-[2rem] shadow-xl font-bold">
+              Get Started For Free
+            </button>
+          </div>
+        </div>
+        <div className="relative w-48 h-10 invert brightness-0 my-10">
+          <Image src={logo} alt="" fill />
         </div>
 
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+        <div className="flex flex-row w-full">
+          <div className="flex flex-col text-sm gap-3">
+            <div className="flex flex-row items-start gap-5">
+              <div className="relative h-[1.125rem] w-[0.8125rem] m-1.5">
+                <Image alt="" fill src={locationIcon} />
+              </div>
+              <div className="w-[40ch]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </div>
+            </div>
+
+            <div className="flex flex-row items-center gap-5">
+              <div className="relative h-[1.125rem] w-[0.8125rem]">
+                <Image alt="" fill src={phoneIcon} />
+              </div>
+              <div>+1-543-123-4567</div>
+            </div>
+
+            <div className="flex flex-row items-center gap-5">
+              <div className="relative h-[1.125rem] w-[0.8125rem]">
+                <Image alt="" fill src={emailIcon} />
+              </div>
+              <div>example@huddle.com</div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 px-32 gap-x-20">
+            <div>About Us</div>
+            <div>Career</div>
+            <div>What We Do</div>
+
+            <div>FAQ</div>
+            <div>Blog</div>
+            <div>Contact Us</div>
+          </div>
+
+          <div className="flex flex-row items-start justify-start gap-1.5">
+            <div className="border p-1.5 border-neutralBlue rounded-full text-md hover:cursor-pointer">
+              <FaFacebookF />
+            </div>
+            <div className="border p-1.5 border-neutralBlue rounded-full text-md hover:cursor-pointer">
+              <FaTwitter />
+            </div>
+            <div className="border p-1.5 border-neutralBlue rounded-full text-md hover:cursor-pointer">
+              <FaInstagram />
+            </div>
+          </div>
         </div>
-
-        <div>+1-543-123-4567</div>
-        <div>example@huddle.com</div>
-
-        <div>About Us What We Do FAQ</div>
-
-        <div>Career Blog Contact Us</div>
-
-        <div>&copy; Copyright 2018 Huddle. All rights reserved.</div>
+        <div
+          className={`${headingFont.className} text-xs text-right ml-auto -mr-[3rem] font-normal`}
+        >
+          &copy; Copyright 2018 Huddle. All rights reserved.
+        </div>
       </footer>
     </main>
   );
