@@ -20,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jakarta.className}>{children}</body>
+      <body
+        className={`${jakarta.className} text-veryDarkBlue bg-veryLightGrayishBlue`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
