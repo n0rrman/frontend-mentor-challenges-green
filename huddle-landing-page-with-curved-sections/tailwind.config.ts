@@ -14,7 +14,7 @@ const config: Config = {
         lightRed: 'hsl(var(--color-lightRed) / <alpha-value>)',
 
         veryDarkCyan: 'hsl(var(--color-veryDarkCyan) / <alpha-value>)',
-        veryDarkBlue: 'hsl(var(--color-veryDarkBlue) / <alpha-value>)',
+        veryPaleBlue: 'hsl(var(--color-veryPaleBlue) / <alpha-value>)',
       }
     }
   },
