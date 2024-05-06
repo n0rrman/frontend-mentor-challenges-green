@@ -53,12 +53,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col px-[6.5rem] py-[10rem] mb-[8rem] gap-10">
+      <section className="flex flex-col px-[6.5rem] py-[10rem] mb-[11.5rem] gap-10">
         <SectionCard
           heading="Grow Together"
           content="Generate meaningful discussions with your audience and build a
           strong, loyal community. Think of the insightful conversations you
           miss out on with a feedback form."
+          imgSize="h-[20.75rem] w-[25.4rem]"
           image={growingImg}
         />
 
@@ -68,6 +69,7 @@ export default function Home() {
           online? Our threads have just-in-time loading for a more natural
           flow."
           image={flowingImg}
+          imgSize="h-[18.5rem] w-[26rem]"
           left
         />
 
@@ -77,77 +79,80 @@ export default function Home() {
           authentication solution. This means, once signed in to your app,
           your users can start chatting immediately."
           image={usersImg}
+          imgSize="h-[19.75rem] w-[26.5rem] -mr-0.5"
         />
       </section>
 
-      <footer className="bg-darkCyan text-paleCyan/80 w-full px-32 py-16">
+      <footer className="bg-darkCyan text-paleCyan/80 w-full py-16">
         <div className="flex items-center justify-center">
-          <div className="flex flex-col gap-5 items-center -mt-[16rem] text-black px-20 py-10 shadow-[0px_0px_20px_rgba(0,0,0,0.1)] bg-white w-70 rounded-xl">
-            <h2 className={`${headingFont.className} text-3xl font-bold`}>
+          <div className="flex flex-col gap-9 items-center -mt-[15.5rem] text-black px-20 pt-16 pb-[3.4rem] shadow-[0px_0px_20px_rgba(0,0,0,0.1)] bg-white w-[50rem] rounded-xl">
+            <h2 className={`${headingFont.className} text-[2rem] font-bold`}>
               Ready To Build Your Community?
             </h2>
-            <button className="bg-pink text-white py-5 px-8 rounded-[2rem] shadow-xl font-bold">
+            <button className="bg-pink text-white text-[1.25rem] py-6 px-[6.4rem] rounded-[3rem] shadow-xl font-bold">
               Get Started For Free
             </button>
           </div>
         </div>
-        <div className="relative w-48 h-10 invert brightness-0 my-10">
-          <Image src={logo} alt="" fill />
-        </div>
-
-        <div className="flex flex-row w-full">
-          <div className="flex flex-col text-sm gap-3">
-            <div className="flex flex-row items-start gap-5">
-              <div className="relative h-[1.125rem] w-[0.8125rem] m-1.5">
-                <Image alt="" fill src={locationIcon} />
-              </div>
-              <div className="w-[40ch]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </div>
-            </div>
-
-            <div className="flex flex-row items-center gap-5">
-              <div className="relative h-[1.125rem] w-[0.8125rem]">
-                <Image alt="" fill src={phoneIcon} />
-              </div>
-              <div>+1-543-123-4567</div>
-            </div>
-
-            <div className="flex flex-row items-center gap-5">
-              <div className="relative h-[1.125rem] w-[0.8125rem]">
-                <Image alt="" fill src={emailIcon} />
-              </div>
-              <div>example@huddle.com</div>
-            </div>
+        <div className="pr-[2rem] pl-[7.5rem] py-[3.5rem]">
+          <div className="relative w-[15rem] h-9 invert brightness-0 my-10">
+            <Image src={logo} alt="" fill />
           </div>
 
-          <div className="grid grid-cols-2 px-32 gap-x-20">
-            <div>About Us</div>
-            <div>Career</div>
-            <div>What We Do</div>
+          <div className="flex flex-row justify-center items-between">
+            <div className="flex flex-col gap-6 text-[1rem] flex-0">
+              <div className="flex flex-row items-start gap-7">
+                <div className="relative h-[1.125rem] w-[0.8125rem] mt-1.5">
+                  <Image alt="" fill src={locationIcon} />
+                </div>
+                <div className="w-[40ch]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </div>
+              </div>
 
-            <div>FAQ</div>
-            <div>Blog</div>
-            <div>Contact Us</div>
-          </div>
+              <div className="flex flex-row items-center justify-start gap-6">
+                <div className="relative h-[1.1rem] w-[1.2rem]">
+                  <Image alt="" fill src={phoneIcon} />
+                </div>
+                <div>+1-543-123-4567</div>
+              </div>
 
-          <div className="flex flex-row items-start justify-start gap-1.5">
-            <div className="border p-1.5 border-neutralBlue rounded-full text-md hover:cursor-pointer">
-              <FaFacebookF />
+              <div className="flex flex-row items-center justify-start gap-6">
+                <div className="relative h-[1rem] w-[1.25rem]">
+                  <Image alt="" fill src={emailIcon} />
+                </div>
+                <div>example@huddle.com</div>
+              </div>
             </div>
-            <div className="border p-1.5 border-neutralBlue rounded-full text-md hover:cursor-pointer">
-              <FaTwitter />
+
+            <div className="grid grid-cols-2 self-start gap-y-4 gap-x-[5rem] mx-[6.4rem] flex-1">
+              <div>About Us</div>
+              <div>Career</div>
+              <div className="w-max">What We Do</div>
+
+              <div>Blog</div>
+              <div>FAQ</div>
+              <div>Contact Us</div>
             </div>
-            <div className="border p-1.5 border-neutralBlue rounded-full text-md hover:cursor-pointer">
-              <FaInstagram />
+
+            <div className="flex flex-col justify-between flex-0 pr-10 h-[14rem]">
+              <div className="flex flex-row items-start justify-start gap-3">
+                <div className="border p-2 border-neutralBlue rounded-full text-sm hover:cursor-pointer">
+                  <FaFacebookF />
+                </div>
+                <div className="border p-2 border-neutralBlue rounded-full text-sm hover:cursor-pointer">
+                  <FaTwitter />
+                </div>
+                <div className="border p-2 border-neutralBlue rounded-full text-sm hover:cursor-pointer">
+                  <FaInstagram />
+                </div>
+              </div>
+              <div className={`${headingFont.className} text-xs font-normal`}>
+                &copy; Copyright 2018 Huddle. All rights reserved.
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className={`${headingFont.className} text-xs text-right ml-auto -mr-[3rem] font-normal`}
-        >
-          &copy; Copyright 2018 Huddle. All rights reserved.
         </div>
       </footer>
     </main>
