@@ -26,7 +26,7 @@ export default function Home() {
           <div className="relative w-[12.5rem] h-8 aspect-[6.45] my-2">
             <Image src={logo} alt="" fill />
           </div>
-          <button className="bg-white px-16 py-3.5 my-0 text-sm rounded-[2rem] shadow-grayishBlue/10 font-bold shadow-xl">
+          <button className="bg-white px-16 py-3.5 my-0 text-sm rounded-[2rem] shadow-grayishBlue/10 font-bold shadow-xl hover:text-grayishBlue transition-all">
             Try It Free
           </button>
         </header>
@@ -41,7 +41,7 @@ export default function Home() {
               you engage in genuine discussion.
             </div>
 
-            <button className="bg-pink w-max py-[1.15rem] px-[4.65rem] my-1 rounded-[2rem] text-paleCyan text-sm">
+            <button className="bg-pink w-max py-[1.15rem] px-[4.65rem] my-1 rounded-[2rem] text-paleCyan text-sm hover:opacity-60 transition-all">
               Get Started For Free
             </button>
           </div>
@@ -89,7 +89,7 @@ export default function Home() {
             <h2 className={`${headingFont.className} text-[2rem] font-bold`}>
               Ready To Build Your Community?
             </h2>
-            <button className="bg-pink text-white text-[1.25rem] py-6 px-[6.4rem] rounded-[3rem] shadow-xl font-bold">
+            <button className="bg-pink text-white text-[1.25rem] py-6 px-[6.4rem] rounded-[3rem] shadow-xl font-bold hover:opacity-60 transition-all">
               Get Started For Free
             </button>
           </div>
@@ -127,24 +127,36 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-2 self-start gap-y-4 gap-x-[5rem] mx-[6.4rem] flex-1">
-              <div>About Us</div>
-              <div>Career</div>
-              <div className="w-max">What We Do</div>
+              <div className="cursor-pointer hover:text-white transition-all">
+                About Us
+              </div>
+              <div className="cursor-pointer hover:text-white transition-all">
+                Career
+              </div>
+              <div className="cursor-pointer hover:text-white transition-all w-max">
+                What We Do
+              </div>
 
-              <div>Blog</div>
-              <div>FAQ</div>
-              <div>Contact Us</div>
+              <div className="cursor-pointer hover:text-white transition-all">
+                Blog
+              </div>
+              <div className="cursor-pointer hover:text-white transition-all">
+                FAQ
+              </div>
+              <div className="cursor-pointer hover:text-white transition-all">
+                Contact Us
+              </div>
             </div>
 
             <div className="flex flex-col justify-between flex-0 pr-10 h-[14rem]">
               <div className="flex flex-row items-start justify-start gap-3">
-                <div className="border p-2 border-neutralBlue rounded-full text-sm hover:cursor-pointer">
+                <div className="border p-2 border-neutralBlue rounded-full text-sm hover:cursor-pointer hover:border-pink hover:text-pink transition-all">
                   <FaFacebookF />
                 </div>
-                <div className="border p-2 border-neutralBlue rounded-full text-sm hover:cursor-pointer">
+                <div className="border p-2 border-neutralBlue rounded-full text-sm hover:cursor-pointer hover:border-pink hover:text-pink transition-all">
                   <FaTwitter />
                 </div>
-                <div className="border p-2 border-neutralBlue rounded-full text-sm hover:cursor-pointer">
+                <div className="border p-2 border-neutralBlue rounded-full text-sm hover:cursor-pointer hover:border-pink hover:text-pink transition-all">
                   <FaInstagram />
                 </div>
               </div>
