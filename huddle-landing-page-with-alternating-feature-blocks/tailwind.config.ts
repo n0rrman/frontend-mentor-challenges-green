@@ -14,6 +14,9 @@ const config: Config = {
         paleCyan: 'hsl(var(--color-paleCyan) / <alpha-value>)',
         darkCyan: 'hsl(var(--color-darkCyan) / <alpha-value>)',
         grayishBlue: 'hsl(var(--color-grayishBlue) / <alpha-value>)',
+      },
+      screens: {
+        'lg': '1040px'
       }
     }
   },
