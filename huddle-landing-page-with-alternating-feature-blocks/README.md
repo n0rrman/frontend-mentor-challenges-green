@@ -10,8 +10,8 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Links
 
-- Solution URL: [Solution at Frontend Mentor](...)
-- Live Site URL: [Live version on Vercel](...)
+- Solution URL: [Solution at Frontend Mentor](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-feature-blocks-tailwind-and-next-UsbkjD56by)
+- Live Site URL: [Live version on Vercel](https://huddle-landing-page-with-alternating-feature-blocks-pearl-chi.vercel.app)
 
 
 ### Built with

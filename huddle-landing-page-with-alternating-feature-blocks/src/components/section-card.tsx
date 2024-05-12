@@ -27,7 +27,7 @@ export default function SectionCard({
         >
           {heading}
         </h2>
-        <p className="text-grayishBlue text-sm">{content}</p>
+        <p className="text-grayishBlue text-sm md:text-lg">{content}</p>
       </div>
       <div className={`${left ? "order-first" : "order-first lg:order-last"} `}>
         <div className={`relative ${imgSize} mx-2`}>
