@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-blue: 246deg 80% 60%;
+
+    --color-work: 15deg 100% 70%;
+    --color-play: 195deg 74% 62%;
+    --color-study: 348deg 100% 68%;
+    --color-exercise: 145deg 58% 55%;
+    --color-social: 264deg 64% 52%;
+    --color-selfCare: 43deg 84% 65%;
+
+    --color-veryDarkBlue: 226deg 43% 10%;
+    --color-darkBlue: 235deg 46% 20%;
+    --color-desaturatedBlue: 235deg 45% 61%;
+    --color-paleBlue: 236deg 100% 87%;
+  }
+}
