@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-ctaText: 356deg 100% 66%:
+    --color-ctaHoverBg: 355 100% 74%;
+    --color-headings: 208deg 49% 24%;
+    
+    --color-bodyCopy: 207deg 13 34%;
+    --color-footerText: 240deg 2% 79%;
+    --color-footerBg: 240 10% 16%;
+  }
+}
