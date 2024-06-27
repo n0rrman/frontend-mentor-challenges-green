@@ -54,7 +54,6 @@ export default function CardSlider({ data }: CardSliderProps) {
 
   return (
     <div className="z-40">
-      <div>{active}</div>
       <div className="flex flex-row overflow-x-hidden">
         {renderedData[active]}
       </div>

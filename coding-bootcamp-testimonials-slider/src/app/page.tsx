@@ -4,7 +4,6 @@ import Image from "next/image";
 import tanyaPic from "/public/image-tanya.jpg";
 import johnPic from "/public/image-john.jpg";
 import curveImg from "/public/pattern-curve.svg";
-import bgImg from "/public/pattern-bg.svg";
 import quotesImg from "/public/pattern-quotes.svg";
 
 export default function Home() {
@@ -31,11 +30,6 @@ export default function Home() {
         <CardSlider data={data} />
       </div>
       <Image className="w-1/2 bottom-0 absolute" src={curveImg} alt="" />
-      <Image
-        className="bottom-0 top-0 right-0 my-auto mx-16 absolute"
-        src={bgImg}
-        alt=""
-      />
       <Image className="w-32 absolute" src={quotesImg} alt="" />
     </div>
   );
