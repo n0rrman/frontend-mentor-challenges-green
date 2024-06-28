@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --color-darkblue: 240deg 38% 20%;
-    --color-grayishblue: 240deg 18% 77%;
+    --color-darkBlue: 240deg 38% 20%;
+    --color-grayishBlue: 240deg 18% 77%;
   }
 }

@@ -53,17 +53,17 @@ export default function CardSlider({ data }: CardSliderProps) {
   };
 
   return (
-    <div className="z-40">
+    <div className="flex flex-col items-center z-40">
       <div className="flex flex-row overflow-x-hidden">
         {renderedData[active]}
       </div>
 
-      <div className="flex flex-row items-center w-fit gap-8 bg-white p-4 rounded-full">
+      <div className="hover:scale-[1.05] transition-all flex flex-row items-center w-fit gap-8 z-50 bg-white p-4 rounded-full shadow-[0px_0px_20px] shadow-grayishBlue/50 translate-y-[-8.5rem] translate-x-[5rem]">
         <button
           className={`${
             active === MIN_VAL
               ? "cursor-not-allowed opacity-50"
-              : "cursor-pointer"
+              : "cursor-pointer hover:scale-[1.15] transition"
           } w-6 h-6 relative`}
           disabled={active === MIN_VAL}
           onClick={() => handleDecrement()}
@@ -74,7 +74,7 @@ export default function CardSlider({ data }: CardSliderProps) {
           className={`${
             active === MAX_VAL
               ? "cursor-not-allowed opacity-50"
-              : "cursor-pointer"
+              : "cursor-pointer hover:scale-[1.15] transition"
           } w-6 h-6 relative`}
           disabled={active === MAX_VAL}
           onClick={() => handleIncrement()}

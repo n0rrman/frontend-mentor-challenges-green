@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
 import bgImg from "/public/pattern-bg.svg";
+import quotesImg from "/public/pattern-quotes.svg";
 
 interface CardProps {
   name: string;
@@ -24,6 +25,11 @@ export default function Card({ name, title, pic, review }: CardProps) {
       </div>
 
       <div className="text-darkBlue flex flex-col gap-8 -mr-[10%]">
+        <Image
+          className="w-24 absolute flex self-center translate-x-[-5rem] translate-y-[-2rem]"
+          src={quotesImg}
+          alt=""
+        />
         <div className="animate-floatRight font-light w-[32.35ch] z-40 text-2xl">
           {review}
         </div>

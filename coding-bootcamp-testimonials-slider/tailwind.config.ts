@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend:{
       colors: {
-        darkBlue: 'hsl(var(--color-darkblue) / <alpha-value>)',
-        grayishBlue: 'hsl(var(--color-grayishblue) / <alpha-value>)',
+        darkBlue: 'hsl(var(--color-darkBlue) / <alpha-value>)',
+        grayishBlue: 'hsl(var(--color-grayishBlue) / <alpha-value>)',
       },
       keyframes: {
         scaleIn: {

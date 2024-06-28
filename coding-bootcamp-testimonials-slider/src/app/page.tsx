@@ -4,7 +4,6 @@ import Image from "next/image";
 import tanyaPic from "/public/image-tanya.jpg";
 import johnPic from "/public/image-john.jpg";
 import curveImg from "/public/pattern-curve.svg";
-import quotesImg from "/public/pattern-quotes.svg";
 
 export default function Home() {
   const data = [
@@ -26,11 +25,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center min-h-screen">
         <CardSlider data={data} />
       </div>
       <Image className="w-1/2 bottom-0 absolute" src={curveImg} alt="" />
-      <Image className="w-32 absolute" src={quotesImg} alt="" />
     </div>
   );
 }
