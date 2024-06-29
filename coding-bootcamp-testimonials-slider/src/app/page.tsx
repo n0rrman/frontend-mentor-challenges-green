@@ -28,7 +28,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center min-h-screen">
         <CardSlider data={data} />
       </div>
-      <Image className="w-1/2 bottom-0 absolute" src={curveImg} alt="" />
+      <Image className="w-[42.5%] bottom-0 absolute" src={curveImg} alt="" />
     </div>
   );
 }
