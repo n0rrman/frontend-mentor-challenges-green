@@ -12,21 +12,21 @@ interface CardProps {
 
 export default function Card({ name, title, pic, review }: CardProps) {
   return (
-    <div className="flex flex-row-reverse justify-center items-center text-xl">
-      <div className="relative flex justify-center items-center w-[50rem] h-[48rem]">
+    <div className="flex flex-col md:flex-row-reverse justify-center items-center text-xl ">
+      <div className="relative flex justify-center items-center w-full md:w-[50rem] aspect-square h-[48rem]">
         <div className="animate-scaleIn w-[70%] h-[72.5%] z-20 relative">
           <Image className="rounded" src={pic} alt="" fill />
         </div>
-        <div className="z-10 absolute w-full h-full flex items-center justify-center bg-red-500">
+        <div className="z-10 absolute w-full h-full flex items-center justify-center">
           <div className="relative">
             <Image className="" src={bgImg} alt="" />
           </div>
         </div>
       </div>
 
-      <div className="text-darkBlue flex flex-col items-start justify-center gap-9 ml-[4%] -mr-[10%]">
+      <div className="text-darkBlue flex flex-col items-start justify-center gap-9 mx-0 md:ml-[4%] md:mr-[-10%]">
         <Image
-          className="w-[7.5rem] flex translate-x-[5.9rem] translate-y-[4.5rem] mt-[-2.25rem]"
+          className="w-[7.5rem] translate-x-[5.9rem] translate-y-[4.5rem] mt-[-2.25rem]"
           src={quotesImg}
           alt=""
         />
