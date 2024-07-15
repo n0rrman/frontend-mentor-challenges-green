@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-lime: 61deg 70% 52%;
+    --color-red: 4deg 69% 50%;
+
+    --color-white: 0deg 0% 100%;
+    --color-slate-100: 202deg 86% 94%;
+    --color-slate-300: 203deg 41% 72%;
+    --color-slate-500: 200deg 26% 54%;
+    --color-slate-700: 200deg 24% 40%;
+    --color-slate-900: 202deg 55% 16%;
+  }
+}
