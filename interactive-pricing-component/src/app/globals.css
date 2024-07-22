@@ -2,24 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    :root {
+  :root {
+    --color-fullSlider: 174deg 77% 80%;
+    --color-sliderBg: 174deg 86% 45%;
+    --color-discountBg: 14deg 92% 95%;
+    --color-discountText: 15deg 100% 70%;
+    --color-ctaText: 226deg 100% 87%;
 
---color-full-slider: 174deg 77% 80%;
---color-sliderBg: 174deg 86% 45%;
---color-discountBg: 14deg 92% 95%;
---color-discountText: 15deg 100% 70%;
---color-ctaText: 226deg 100% 87%;
-
-
---color-pricingCompBg: 0deg 0% 100%;
---color-mainBg: 230deg 100% 99%;
---color-emptySlider: 224deg 65% 95%
-- Light Grayish Blue (Toggle Background): hsl(223, 50%, 87%)
-- Grayish Blue (Text): hsl(225, 20%, 60%)
-- Dark Desaturated Blue (Text & CTA Background): hsl(227, 35%, 25%) */
-
-    }
+    --color-pricingCompBg: 0deg 0% 100%;
+    --color-mainBg: 230deg 100% 99%;
+    --color-emptySlider: 224deg 65% 95%;
+    --color-toggleBg: 223deg 50% 87%;
+    --color-text: 225deg 20% 60%;
+    --color-ctaBg: 227deg 35% 25%;
+  }
 }
-
