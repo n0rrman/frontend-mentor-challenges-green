@@ -1,11 +1,13 @@
 export default function Home() {
   return (
-    <main>
-      <div id="headings">
-        <h1>Simple, traffic-based pricing</h1>
-        <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+    <main className="min-h-screen flex justify-center items-center flex-col gap-5">
+      <div className="text-center" id="headings">
+        <h1 className="text-3xl">Simple, traffic-based pricing</h1>
+        <h2 className="text-xl">
+          Sign-up for our 30-day trial. No credit card required.
+        </h2>
       </div>
-      <div className="bg-pricingCompBg" id="card">
+      <div className="bg-pricingCompBg shadow-2xl rounded-xl" id="card">
         <div>
           <div>Pageviews</div>
           <div>$ /month</div>
