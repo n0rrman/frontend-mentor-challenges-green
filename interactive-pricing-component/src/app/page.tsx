@@ -1,13 +1,20 @@
+import Image from "next/image";
+
+import bg from "/public/bg-pattern.svg";
+
 export default function Home() {
   return (
     <main className="min-h-screen flex justify-center items-center flex-col gap-5">
-      <div className="text-center" id="headings">
+      <div className="relative w-full min-h-50% aspect-square top-0">
+        <Image fill src={bg} alt="" />
+      </div>
+      <div className="text-center z-40" id="headings">
         <h1 className="text-3xl">Simple, traffic-based pricing</h1>
         <h2 className="text-xl">
           Sign-up for our 30-day trial. No credit card required.
         </h2>
       </div>
-      <div className="bg-pricingCompBg shadow-2xl rounded-xl" id="card">
+      <div className="bg-pricingCompBg shadow-2xl rounded-xl z-40" id="card">
         <div>
           <div>Pageviews</div>
           <div>$ /month</div>
