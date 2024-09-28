@@ -15,7 +15,7 @@ export default function TipCalculator() {
             </div>
             <input
               className="bg-lighterGrayishCyan w-full text-right py-2 px-5 rounded-md text-2xl"
-              type="text"
+              type="number"
               placeholder="0"
             />
           </div>
@@ -24,13 +24,14 @@ export default function TipCalculator() {
         <div>
           <div className="pb-4">Select Tip %</div>
           <div className="grid grid-cols-3 grid-rows-2 gap-4 text-center text-2xl text-lighterGrayishCyan">
-            <div className="rounded-md py-2 bg-darkCyan">5%</div>
-            <div className="rounded-md py-2 bg-darkCyan">10%</div>
-            <div className="rounded-md py-2 bg-darkCyan">15%</div>
-            <div className="rounded-md py-2 bg-darkCyan">25%</div>
-            <div className="rounded-md py-2 bg-darkCyan">50%</div>
+            <button className="rounded-md py-2 bg-darkCyan">5%</button>
+            <button className="rounded-md py-2 bg-darkCyan">10%</button>
+            <button className="rounded-md py-2 bg-darkCyan">15%</button>
+            <button className="rounded-md py-2 bg-darkCyan">25%</button>
+            <button className="rounded-md py-2 bg-darkCyan">50%</button>
             <input
-              className="rounded-md py-2 placeholder:text-darkGrayishCyan text-center bg-lighterGrayishCyan"
+              className="rounded-md py-2 placeholder:text-darkGrayishCyan text-darkGrayishCyan text-center bg-lighterGrayishCyan"
+              type="number"
               placeholder="Custom"
             />
           </div>
@@ -44,7 +45,7 @@ export default function TipCalculator() {
             </div>
             <input
               className="bg-lighterGrayishCyan w-full text-right py-2 px-5 rounded-md text-2xl"
-              type="text"
+              type="number"
               placeholder="0"
             />
           </div>
